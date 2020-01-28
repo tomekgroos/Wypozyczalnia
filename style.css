@@ -1,6 +1,6 @@
 body{
     font-family: 'Lato';
-    background-image: url(bricks.jpg);
+    background: linear-gradient(to right, white, #0099f7, #f11712);
     
 }
 
