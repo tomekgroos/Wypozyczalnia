@@ -3,6 +3,7 @@ wywalic napis z right logo "wypozyczalnia", umiescic go
 w main content  */
 
 body{
+    margin: 0;
     font-family: 'Lato';
     background: linear-gradient(to left, #0f2027, #203a43, #2c5364,#1b4253);
     
@@ -61,12 +62,15 @@ box-shadow: 0px 0px 15px 11px rgba(255,255,255,1);
    justify-content: flex-start;
    list-style-type: none;
    align-self: center;
-
-   
 }
+
+.nav-container ul a{
+    text-decoration: none;
+ }
 
 
 .nav-container ul li {
+    
     
     text-align: center;
     color: white;
@@ -114,8 +118,11 @@ box-shadow: 0px 0px 15px 11px rgba(255,255,255,1);
     display: flex;
     flex-wrap: wrap;
     
+    
    
 }
+
+/*tytuł panelu głównego*/
 
 .center-panel h1{
     justify-content: center;
@@ -128,22 +135,23 @@ box-shadow: 0px 0px 15px 11px rgba(255,255,255,1);
 .center-panel-title {
     
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
     height: 100%;
     background: linear-gradient(to left, #0f3138, #314b54, #3d6475,#2c5364);
     border-bottom: 1px solid white;
+    
 }
 
 .center-panel-title p {
     font-family: Lobster, cursive;
-    font-size: 5em;
+    font-size: 4em;
     color: white;
     padding-top: 5px;
     padding-bottom: 10px;
     text-shadow: 0 0 10px #FF0000;
 }
 
-
+/*tekst panelu głównego*/
 
 .center-aside{
     width: 66%;
@@ -154,7 +162,7 @@ box-shadow: 0px 0px 15px 11px rgba(255,255,255,1);
 .center-aside h1{
     
     margin:0;
-    font-size: 3em;
+    font-size: 2em;
     padding-bottom: 10px;
 }
 
@@ -191,7 +199,135 @@ box-shadow: 0px 0px 15px 11px rgba(255,255,255,1);
         
 }
 
+/*Sekcja artykułów*/
 
+.article-container{
+    max-width: 100%;
+    background: linear-gradient(to right, #8e0e00, #1f1c18);
+    border-top: 1px solid white;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.article-title-bar{
+    
+    width: 100%;
+    align-self: center;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    text-shadow: 2px 2px  #3b3b6d;
+    
+
+    
+}
+
+.article-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.article{
+    width:25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    color: white;
+    text-shadow: 2px 2px  #3b3b6d;
+    font-size: 20px;
+    border: 2px solid white;
+    margin-bottom: 80px;
+    
+    
+}
+
+.article-img{
+    max-width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+    
+}
+
+.article-img img{
+    width: 100%;
+    height: 274px;
+    border-bottom: 2px solid white;
+}
+
+.article-title{
+    height: 20%;
+    padding: 20px;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+  
+
+.article-footer{
+    height: 10%;
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.public-date{
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5px;
+    
+}
+
+.see-more{
+    width: 50%;
+}
+
+.see-more button{
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Lato;
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 20px;
+    
+}
+
+.see-more button:hover{
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Lato;
+    color: white;
+    font-weight: bold;
+    background: red;
+    
+}
+          
+.page-footer{
+    width: 100%;
+    color:white;
+    text-align: center;
+    font-size: 24px;
+    border-top: 2px solid white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-shadow: 0 0 10px #FF0000;
+}
+
+/*media queries*/
 
 @media screen and (max-width: 1200px){
     
