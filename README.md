@@ -1,3 +1,3 @@
-Wypożyczalnia
+Wypożyczalnia American Dream
 
-Strona stworzona przy użyciu czystego HTML i CSS
+Responsywna strona stworzona wyłącznie za pomocą HTML i CSS
